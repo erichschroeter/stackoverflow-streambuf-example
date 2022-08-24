@@ -1,4 +1,5 @@
 #include <array>
+#include <sstream>
 
 /// Thanks to https://stackoverflow.com/a/7185723/561624
 class range

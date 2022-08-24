@@ -4,7 +4,19 @@
 
 int main( int argc, char **argv )
 {
-	Num_Virtual_File vfile( 1, 2 );
+	int from = 0;
+	int to = 1;
+
+	if ( argc > 1 )
+	{
+		from = std::atoi( argv[ 1 ] );
+		if ( argc > 2 )
+		{
+			to = std::atoi( argv[ 2 ] );
+		}
+	}
+
+	Num_Virtual_File vfile( from, to );
 	std::istream     stream( &vfile );
 	auto             file_byte_total = vfile.in_avail();
 	std::cout << "File size: " << file_byte_total << std::endl;
