@@ -9,5 +9,7 @@ DIR=build && cmake --build $DIR --config Debug --target TARGET
 # Execute
 
 ```bash
-./build/example_1.exe
+./build/Debug/example_1.exe 1 10
+./build/Debug/example_2.exe 1 10
+./build/Debug/example_3.exe 1 10
 ```
